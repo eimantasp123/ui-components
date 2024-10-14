@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.toggle-ball {
+  animation: toLight 0.4s ease-in-out;
+  width: 26px;
+  border-radius: 50px;
+  height: 26px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2px;
+}
+
+.dark .toggle-ball {
+  animation: toDark 0.4s ease-in-out forwards;
+}
+
+@keyframes toDark {
+  0% {
+    width: 26px;
+    left: 2px;
+  }
+  50% {
+    width: 34px;
+    left: 2px;
+  }
+  100% {
+    width: 26px;
+    left: 34px;
+  }
+}
+
+@keyframes toLight {
+  0% {
+    width: 26px;
+    left: 34px;
+  }
+  50% {
+    width: 34px;
+    left: 26px;
+  }
+  100% {
+    width: 26px;
+    left: 2px;
+  }
+}
