@@ -21,8 +21,9 @@ const DarkModeToggle = () => {
   return (
     <div
       onClick={toggleDarkMode}
-      className="shadow-custom-light relative flex h-8 w-16 cursor-pointer select-none items-center overflow-hidden rounded-full border border-neutral-400/10 bg-neutral-200 dark:border-neutral-600/30 dark:bg-neutral-800"
+      className="shadow-custom-light relative flex h-8 w-16 select-none items-center rounded-full border border-neutral-400/10 bg-neutral-200 dark:border-neutral-600/30 dark:bg-neutral-800"
     >
+      {/* Dark mode icon */}
       <CiDark
         size={16}
         className={`absolute ${isDark ? "opacity-0" : "opacity-100 delay-200"} left-[7px] top-1/2 z-20 -translate-y-1/2 text-neutral-800 transition-all duration-500 ease-in-out`}
@@ -32,6 +33,8 @@ const DarkModeToggle = () => {
       >
         ON
       </span>
+
+      {/* Light mode icon */}
       <CiLight
         size={16}
         className={`absolute ${isDark ? "opacity-100 delay-200" : "opacity-0"} right-[7px] top-1/2 z-20 -translate-y-1/2 text-neutral-400 transition-all duration-500 ease-in-out`}
