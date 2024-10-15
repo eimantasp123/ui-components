@@ -50,7 +50,7 @@ const PasswordStrengthIndicator = ({ password = "" }) => {
 
   return (
     <div className="flex flex-col">
-      <p className="text-textPrimary mb-2 text-sm font-medium">
+      <p className="text-textPrimary mb-2 text-[14px] font-medium">
         {strengthText}
       </p>
       {/* Strength Bars */}
@@ -63,7 +63,7 @@ const PasswordStrengthIndicator = ({ password = "" }) => {
         ))}
       </div>
       {/* Instructional text */}
-      <p className="text-textSecondary text-sm">
+      <p className="text-textSecondary text-[13px]">
         Password must have at least 8 characters, symbols, uppercase and
         lowercase letters. Never reuse old passwords.
       </p>

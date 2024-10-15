@@ -5,6 +5,7 @@ import Layout from "./components/Layout";
 import FullButtons from "./FullButtons";
 import Home from "./Home";
 import PasswordStrength from "./PasswordStrength";
+import MobileHeader from "./MobileHeader";
 
 const App = () => (
   <Routes>
@@ -14,6 +15,7 @@ const App = () => (
       <Route path="/dark-mode-2" element={<DarkModeToggleSecondary />} />
       <Route path="/full-color-buttons" element={<FullButtons />} />
       <Route path="/strength-indicator" element={<PasswordStrength />} />
+      <Route path="/mobile-header" element={<MobileHeader />} />
     </Route>
   </Routes>
 );
